@@ -5,6 +5,6 @@ int main (){
     int* p{nullptr};
     p=&a;
     *p= *p * *p;
-    cout<<*p;
+    cout<<p;
     return 0;
 }
