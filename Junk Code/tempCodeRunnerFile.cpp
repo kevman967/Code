@@ -1,23 +1,17 @@
 #include <iostream>
-#include <cstddef>
-#include <array>
-
 using namespace std;
-int main()
-{
-    int arraysize;
-    int array[arraysize];
-    cout<<"how big is your array?:  "<<endl;
-    cin >>arraysize;
-    for(int i=0;i<arraysize;i++)
-    {
-        array[i]=i;
-    }
-    cout<< "array:  ";
-    for(int i=0;i<arraysize;i++)
-    {
-        cout<<array[i]<<"   ";
-    }
-    return 0;
-    
+
+int main () {
+int x = 50;
+int y = 0;
+double z = 0;
+try {
+if( y == 0 ) {
+throw "Division by zero condition!";
+}
+cout << x/y << endl;
+} catch (const char* msg) {
+cout << msg << endl;
+}
+return 0;
 }
